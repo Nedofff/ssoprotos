@@ -7,7 +7,6 @@ gen:
 push:
 	git add .
 	git ci -m "$(MESSAGE)"
-	git remote add origin git@github.com:Nedofff/ssoprotos.git
 	git push -u origin main
 
 .PHONY: gen
