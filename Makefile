@@ -7,6 +7,8 @@ gen:
 push:
 	git add .
 	git ci -m "$(MESSAGE)"
-	git push -u origin main
+	git push origin
 
-.PHONY: gen
+all: gen push
+
+.PHONY: gen push all
